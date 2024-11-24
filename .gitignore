@@ -3,6 +3,7 @@ Icon?
 .dropbox
 .ipynb_checkpoints/
 aau/
+.vscode/
 
 # LibreOffice locks
 .~lock.*#
