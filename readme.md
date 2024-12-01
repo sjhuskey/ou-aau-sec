@@ -1,7 +1,4 @@
----
-title: "ReadMe"
-author: "Samuel J. Huskey"
----
+# Analysis of MLA Data on Foreign Language Enrollments at OU and Public AAU Institutions 
 
 ## Purpose
 

@@ -166,6 +166,11 @@ def lang_compare_streamlit(lang):
     ax.set_xlabel('Year')
     ax.set_ylabel('Enrollment')
     ax.legend()
+
+    # Set x-axis ticks to the exact years in SRVY_YEAR
+    years = ou_lang_grouped['SRVY_YEAR'].unique()
+    plt.xticks(ticks=years, labels=years)
+
     ax.grid(True)
 
     # Display the plot
@@ -189,7 +194,7 @@ st.download_button(
 
 st.subheader("Download the Entire Dataset")
 
-st.write("Click below to download the entire set of data on foreign language enrollment at public AAU institutions and OU, as originally reported in the [Modern Language Association's](https://www.mla.org/) [Language Enrollment Database, 1958–2021](https://apps.mla.org/flsurvey_search)")
+st.write("Click below to download the entire set of data on foreign language enrollment at public AAU institutions and OU.")
 st.download_button(
     label="Download All Data",
     data=csv,
